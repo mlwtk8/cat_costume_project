@@ -1,0 +1,274 @@
+body {
+  margin: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: .875em;
+  line-height: 1.75em;
+  color: #323232;
+}
+
+.container {
+  width: 80%;
+  margin: 8% auto;
+  max-width: 1400px;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.875em;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #00897f;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: 'PT Serif', serif;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+h3 span {
+  text-transform:uppercase;
+}
+
+a {
+  font-family: 'PT Serif', serif;
+  font-size: 1em;
+  color: #f26522;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'PT Serif', serif;
+  font-size: .9em;
+  color: #323232;
+}
+
+
+
+.align-center {
+  text-align: center;
+}
+
+/* header styles */
+header {
+  padding: 2%;
+  height: 40px;
+}
+
+header h1 {
+  float: left;
+  font-size: 1.5em;
+  width: 50%;
+}
+
+nav {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  text-decoration: none;
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+.hero-image {
+  background: url("../images/kats-hero.jpg") center center no-repeat;
+  background-size: cover;
+  height: 50%;
+}
+
+/* main section styles */
+.intro-copy {
+  margin-bottom: 8%;
+}
+
+.space-below {
+  margin-bottom: 4.5%;
+}
+
+.intro-copy h3 {
+  margin: 0;
+}
+
+.box {
+  background-color: #eeeeee;
+  padding: 3%;
+  width: 41%;
+  float: left;
+}
+
+.margin-right {
+  margin-right: 6%;
+}
+
+.cat-images {
+  margin-top: 8%;
+  text-align: center;
+}
+
+.cat-images img {
+  border-radius: 50%;
+  width: 25%;
+  height: auto;
+}
+
+/*contact section styles */
+.contact {
+  background-color: #eeeeee;
+  padding-top: 1px;
+}
+
+.box-white {
+  background-color: white;
+}
+
+.address {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.address h3 {
+  margin: 0px;
+  padding-right: 10px;
+}
+
+.address a {
+  text-decoration: none;
+}
+
+.address a:hover {
+  text-decoration:underline;
+}
+
+.map {
+  background: url("../images/kats-map.jpg") center center no-repeat;
+  background-size: cover;
+  height: 50%;
+}
+
+footer {
+  background-color: #00897f;
+  text-align: center;
+  color: white;
+  padding: 5%;
+}
+
+
+/* On devices wider than 660px */
+@media screen and (max-width: 660px) {
+
+  body {
+    font-size: 1em;
+  }
+
+  .container {
+    width: 100%;
+    margin: 8% auto;
+    max-width: 1400px;
+  }
+
+  .intro-copy {
+    padding: 5%;
+  }
+
+  .box {
+    padding: 2% 5%;
+    width: 90%;
+    float: none;
+  }
+
+  .cat-images img {
+    width: 35%;
+  }
+
+  .cat-images img:first-child {
+    display: none;
+  }
+
+  .contact .container {
+    margin: 3% auto;
+  }
+
+  .contact h1 {
+    display: none;
+  }
+
+  .contact h3 {
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .contact span {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .box-white {
+    background-color: #eeeeee;
+  }
+
+  .map {
+    height: 40%;
+  }
+
+}
+
+/* On devices wider than 940px */
+@media screen and (max-width: 420px) {
+
+  header h1 {
+    float: none;
+    font-size: 1.5em;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .intro-copy h3 {
+    font-weight: normal;
+  }
+
+  .cat-images img {
+    width: 65%;
+  }
+
+  .cat-images img:nth-child(2) {
+    display: none;
+  }
+
+  .contact h3 {
+    text-align: left;
+  }
+
+  .hero-image {
+    height: 35%;
+  }
+
+  .map {
+    height: 30%;
+  }
+
+  footer h1 {
+    font-size: 1.4em;
+  }
+
+}
